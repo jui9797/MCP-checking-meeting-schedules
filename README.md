@@ -35,7 +35,7 @@ Additionally, a helper script (`checkToday.js`) can be run to check today’s me
 
 1. Clone the repository:
    ```bash
-     [git clone](https://github.com/jui9797/MCP-checking-meeting-schedules)
+     git clone https://github.com/jui9797/MCP-checking-meeting-schedules
      cd my-mcp
    ```
 2. Install dependencies:
