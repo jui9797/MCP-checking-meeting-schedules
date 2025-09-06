@@ -20,9 +20,13 @@ Additionally, a helper script (`checkToday.js`) can be run to check today’s me
 ## 📂 Project Structure
 
 ├── server.js # MCP server (registers tools)
+
 ├── checkToday.js # CLI script to check today’s meetings
+
 ├── .env # Environment variables (not committed)
+
 ├── package.json
+
 └── README.md
 
 ---
@@ -60,14 +64,14 @@ This will start the MCP server which tools (like Claude or OpenAI with MCP integ
 
 Example output:
 
-Aaj er meetings:
+Today's meetings:
 
 - Team Standup at 2025-09-06T09:00:00+06:00
 - Client Call at 2025-09-06T14:00:00+06:00
 
 If no meetings are found:
 
-- Aaj kono meeting nai.
+- You have no meeting for today.
 
 If an error occurs:
 

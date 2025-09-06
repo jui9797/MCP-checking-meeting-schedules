@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { getMyCalendarDataByDate } from "./server.js"; // MCP server file path adjust করো
+import { getMyCalendarDataByDate } from "./server.js";
 
 dotenv.config({ quiet: true });
 
@@ -8,11 +8,11 @@ dotenv.config({ quiet: true });
   const result = await getMyCalendarDataByDate(today);
 
   if (result.meetings && result.meetings.length > 0) {
-    console.log("Aaj er meetings:");
+    console.log("Today's meetings:");
     result.meetings.forEach((meeting) => console.log(`- ${meeting}`));
   } else if (result.error) {
     console.error("Error fetching meetings:", result.error);
   } else {
-    console.log("Aaj kono meeting nai.");
+    console.log("You have no meeting for today.");
   }
 })();
