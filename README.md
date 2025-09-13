@@ -14,6 +14,7 @@ Additionally, a helper script (`checkToday.js`) can be run to check today’s me
 - ✅ Validates date inputs using **Zod**
 - ✅ Uses **dotenv** for environment variables
 - ✅ CLI command to check today’s meetings
+- ✅ Connects with **Cursor AI** via MCP integration
 
 ---
 
@@ -24,6 +25,8 @@ Additionally, a helper script (`checkToday.js`) can be run to check today’s me
 ├── checkToday.js # CLI script to check today’s meetings
 
 ├── .env # Environment variables (not committed)
+
+├── mcp.json # MCP configuration file for Cursor AI
 
 ├── package.json
 
@@ -76,6 +79,20 @@ If no meetings are found:
 If an error occurs:
 
 - Error fetching meetings: <error_message>
+
+## MCP Connection with Cursor AI
+
+To connect this MCP server with Cursor AI, create an mcp.json file in your project (or in Cursor’s MCP config folder):
+
+```bash
+  {
+     "name": "calendar-mcp",
+     "command": "node",
+     "args": ["server.js"],
+     "transport": "stdio",
+     "env": "public_api_key",
+  }
+```
 
 ## Tech Stack
 
