@@ -5,6 +5,14 @@ This project integrates **Google Calendar** with the **Model Context Protocol (M
 It exposes a tool (`getMyCalendarDataByDate`) that fetches events from a Google Calendar on a given date.  
 Additionally, a helper script (`checkToday.js`) can be run to check today’s meetings directly via CLI.
 
+The **Calendar MCP Server** allows you to access your **Google Calendar events** through MCP-compatible apps.
+
+- When running this project with **Cursor AI**, you can simply ask Cursor questions like:  
+  **“Do I have any meetings today?”**  
+  and Cursor will fetch your meeting schedule from Google Calendar and give you the answer directly.
+
+This makes it easier to manage daily schedules without leaving your development environment.
+
 ---
 
 ## 🚀 Features
